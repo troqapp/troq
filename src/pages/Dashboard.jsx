@@ -3,7 +3,7 @@ export default function Dashboard() {
     <section className="panel-surface card">
       <h2 className="section-title">Skill Galaxy</h2>
       <p className="section-subtitle">Your core focus radiates outward, with connected skills orbiting in neon hues.</p>
-      <div className="galaxy-wrapper" style={{ position: 'relative', height: 380 }}>
+      <div className="galaxy-wrapper galaxy-stage">
         <div className="galaxy-core" />
         <div className="orb orb-a" />
         <div className="orb orb-b" />
