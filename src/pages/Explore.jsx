@@ -17,7 +17,7 @@ export default function Explore() {
     <section className="stack-vertical">
       <div className="panel-surface card">
         <h2 className="section-title">Explore & Matchmaking</h2>
-        <div className="row" style={{ gap: 10 }}>
+        <div className="row gap-10">
           <input className="input-neon" placeholder="Search skills or people" value={q} onChange={e=>setQ(e.target.value)} />
           <NeonButton color="teal">Search</NeonButton>
         </div>
@@ -28,7 +28,7 @@ export default function Explore() {
             <h3 className="section-title" style={{ fontSize: 18 }}>{u.name}</h3>
             <p className="section-subtitle" style={{ marginBottom: 10 }}>Offers: {u.offers.join(', ')}</p>
             <p className="section-subtitle">Needs: {u.needs.join(', ')}</p>
-            <div className="row" style={{ justifyContent: 'flex-end' }}>
+            <div className="row justify-end">
               <NeonButton color="purple" to="/chat">Message</NeonButton>
               <NeonButton color="teal" to="/swap">Propose Swap</NeonButton>
             </div>
