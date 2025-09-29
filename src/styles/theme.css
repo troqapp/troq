@@ -132,8 +132,12 @@ body::before { content: ""; position: fixed; inset: 0; pointer-events: none; bac
 .mt-16 { margin-top: 16px; }
 .mt-14 { margin-top: 14px; }
 .mt-6 { margin-top: 6px; }
+.mb-10 { margin-bottom: 10px; }
+.no-margin { margin: 0; }
+.h3-small { font-size: 18px; }
 .grid-rows-chat { display: grid; grid-template-rows: 1fr auto; gap: 12px; }
 .galaxy-stage { position: relative; height: 380px; }
+.contact-item { padding: 12px; border-radius: 10px; }
 
 /* Media queries */
 @media (max-width: 900px) {
