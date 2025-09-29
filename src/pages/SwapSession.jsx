@@ -5,12 +5,12 @@ export default function SwapSession() {
     <section className="panel-surface card">
       <h2 className="section-title">Swap Session</h2>
       <p className="section-subtitle">Split-screen video call with neon-glow borders.</p>
-      <div className="grid-2" style={{ alignItems: 'stretch' }}>
+      <div className="grid-2 align-stretch">
         <div className="video-pane" />
         <div className="video-pane" />
       </div>
-      <div className="row" style={{ justifyContent: 'space-between', marginTop: 14 }}>
-        <div className="row" style={{ gap: 8 }}>
+      <div className="row justify-between mt-14">
+        <div className="row gap-8">
           <NeonButton color="teal">Mute</NeonButton>
           <NeonButton color="teal">Share</NeonButton>
         </div>
