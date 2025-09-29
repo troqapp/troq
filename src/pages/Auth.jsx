@@ -4,16 +4,16 @@ import NeonButton from '../components/NeonButton.jsx'
 export default function Auth() {
   const [mode, setMode] = useState('signin')
   return (
-    <div className="grid-2" style={{ alignItems: 'center', minHeight: '60vh' }}>
+    <div className="grid-2 align-center minh-60">
       <div className="panel-surface card">
-        <div className="row" style={{ justifyContent: 'space-between' }}>
+        <div className="row justify-between">
           <h2 className="section-title" style={{ margin: 0 }}>{mode === 'signin' ? 'Welcome back' : 'Create your account'}</h2>
           <div className="row">
             <NeonButton color={mode==='signin'?'teal':'purple'} onClick={() => setMode('signin')}>Sign In</NeonButton>
             <NeonButton color={mode==='signup'?'teal':'purple'} onClick={() => setMode('signup')}>Sign Up</NeonButton>
           </div>
         </div>
-        <div className="stack-vertical" style={{ marginTop: 16 }}>
+        <div className="stack-vertical mt-16">
           {mode === 'signup' && (
             <label className="stack-vertical">
               <span>Name</span>
@@ -28,7 +28,7 @@ export default function Auth() {
             <span>Password</span>
             <input type="password" className="input-neon" placeholder="••••••••" />
           </label>
-          <div className="row" style={{ justifyContent: 'space-between', marginTop: 6 }}>
+          <div className="row justify-between mt-6">
             <div />
             <NeonButton color="teal">{mode === 'signin' ? 'Sign In' : 'Create Account'}</NeonButton>
           </div>
