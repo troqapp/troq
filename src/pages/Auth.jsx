@@ -7,7 +7,7 @@ export default function Auth() {
     <div className="grid-2 align-center minh-60">
       <div className="panel-surface card">
         <div className="row justify-between">
-          <h2 className="section-title" style={{ margin: 0 }}>{mode === 'signin' ? 'Welcome back' : 'Create your account'}</h2>
+          <h2 className="section-title no-margin">{mode === 'signin' ? 'Welcome back' : 'Create your account'}</h2>
           <div className="row">
             <NeonButton color={mode==='signin'?'teal':'purple'} onClick={() => setMode('signin')}>Sign In</NeonButton>
             <NeonButton color={mode==='signup'?'teal':'purple'} onClick={() => setMode('signup')}>Sign Up</NeonButton>
