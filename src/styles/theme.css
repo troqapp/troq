@@ -119,6 +119,21 @@ body::before { content: ""; position: fixed; inset: 0; pointer-events: none; bac
 .stack-vertical { display: flex; flex-direction: column; gap: 12px; }
 .row { display: flex; gap: 12px; align-items: center; }
 .centered { display: grid; place-items: center; }
+.justify-between { justify-content: space-between; }
+.justify-end { justify-content: flex-end; }
+.align-center { align-items: center; }
+.align-start { align-items: start; }
+.align-stretch { align-items: stretch; }
+.gap-10 { gap: 10px; }
+.gap-8 { gap: 8px; }
+.minh-60 { min-height: 60vh; }
+.minh-520 { min-height: 520px; }
+.minh-320 { min-height: 320px; }
+.mt-16 { margin-top: 16px; }
+.mt-14 { margin-top: 14px; }
+.mt-6 { margin-top: 6px; }
+.grid-rows-chat { display: grid; grid-template-rows: 1fr auto; gap: 12px; }
+.galaxy-stage { position: relative; height: 380px; }
 
 /* Media queries */
 @media (max-width: 900px) {
