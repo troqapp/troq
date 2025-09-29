@@ -3,8 +3,8 @@ import NeonButton from '../components/NeonButton.jsx'
 export default function Landing() {
   return (
     <section className="landing-hero">
-      <div className="centered" style={{ minHeight: '60vh' }}>
-        <div className="hero-content">
+      <div className="centered minh-60">
+        <div>
           <h1 className="hero-headline">Grow faster with skill swaps</h1>
           <p className="hero-subcopy">Match with peers, swap skills in live sessions, and build your galaxy of expertise. Designed with a cosmic aesthetic: black canvas, shining stars, and neon accents.</p>
           <div className="hero-actions">
