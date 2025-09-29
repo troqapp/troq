@@ -16,7 +16,7 @@ export default function Support() {
         <h3 className="section-title">Contact Support</h3>
         <label className="stack-vertical"><span>Subject</span><input className="input-neon" placeholder="Brief summary" /></label>
         <label className="stack-vertical"><span>Details</span><textarea className="input-neon" rows="4" placeholder="Describe the issue"></textarea></label>
-        <div className="row" style={{ justifyContent: 'flex-end' }}>
+        <div className="row justify-end">
           <NeonButton color="teal">Submit</NeonButton>
         </div>
       </div>
