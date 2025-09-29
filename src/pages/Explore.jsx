@@ -25,8 +25,8 @@ export default function Explore() {
       <div className="grid-auto">
         {filtered.map(u => (
           <article key={u.id} className="panel-surface card">
-            <h3 className="section-title" style={{ fontSize: 18 }}>{u.name}</h3>
-            <p className="section-subtitle" style={{ marginBottom: 10 }}>Offers: {u.offers.join(', ')}</p>
+            <h3 className="section-title h3-small">{u.name}</h3>
+            <p className="section-subtitle mb-10">Offers: {u.offers.join(', ')}</p>
             <p className="section-subtitle">Needs: {u.needs.join(', ')}</p>
             <div className="row justify-end">
               <NeonButton color="purple" to="/chat">Message</NeonButton>
