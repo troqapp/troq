@@ -2,12 +2,12 @@ import NeonButton from '../components/NeonButton.jsx'
 
 export default function Settings() {
   return (
-    <section className="grid-2" style={{ alignItems: 'start' }}>
+    <section className="grid-2 align-start">
       <div className="panel-surface card stack-vertical">
         <h2 className="section-title">Account Settings</h2>
         <label className="stack-vertical"><span>Email</span><input className="input-neon" defaultValue="you@domain.com" /></label>
         <label className="stack-vertical"><span>New Password</span><input type="password" className="input-neon" placeholder="••••••••" /></label>
-        <div className="row" style={{ justifyContent: 'flex-end' }}>
+        <div className="row justify-end">
           <NeonButton color="teal">Update</NeonButton>
         </div>
       </div>
