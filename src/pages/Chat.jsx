@@ -14,7 +14,7 @@ export default function Chat() {
         <h3 className="section-title">Connections</h3>
         <div className="stack-vertical">
           {contacts.map(c => (
-            <div key={c} className="panel-surface card" style={{ padding: 12 }}>{c}</div>
+            <div key={c} className="panel-surface contact-item">{c}</div>
           ))}
         </div>
       </aside>
