@@ -12,17 +12,18 @@ export default function Profile() {
           <label className="stack-vertical"><span>Display Name</span><input className="input-neon" defaultValue="Nova Learner" /></label>
           <label className="stack-vertical"><span>Headline</span><input className="input-neon" defaultValue="Design strategist exploring ML" /></label>
           <label className="stack-vertical"><span>Bio</span><textarea className="input-neon" rows="4" defaultValue="I love collaborative learning and skill swaps that unlock both sides."></textarea></label>
-          <div className="row" style={{ justifyContent: 'flex-end' }}>
+          <div className="row justify-end">
             <NeonButton color="teal">Save</NeonButton>
           </div>
         </div>
       </section>
       <section className="panel-surface card">
         <h3 className="section-title">Skills</h3>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+        <div className="skill-tags">
           {skills.map(s => <span key={s} className="tag-glow">{s}</span>)}
         </div>
       </section>
+      <style>{`.skill-tags{display:flex;flex-wrap:wrap;gap:8px}`}</style>
     </div>
   )
 }
