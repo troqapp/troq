@@ -9,16 +9,16 @@ const thread = [
 
 export default function Chat() {
   return (
-    <div className="grid-2" style={{ alignItems: 'stretch', minHeight: 520 }}>
-      <aside className="panel-surface" style={{ padding: 12 }}>
+    <div className="grid-2 align-stretch minh-520">
+      <aside className="panel-surface card">
         <h3 className="section-title">Connections</h3>
         <div className="stack-vertical">
           {contacts.map(c => (
-            <div key={c} className="panel-surface" style={{ padding: 12, borderRadius: 10 }}>{c}</div>
+            <div key={c} className="panel-surface card" style={{ padding: 12 }}>{c}</div>
           ))}
         </div>
       </aside>
-      <section className="panel-surface" style={{ padding: 16, display: 'grid', gridTemplateRows: '1fr auto', gap: 12 }}>
+      <section className="panel-surface card grid-rows-chat">
         <div className="stack-vertical">
           {thread.map(m => (
             <div key={m.id} className={m.from==='me' ? 'bubble-outgoing' : 'bubble-incoming'}>{m.text}</div>
