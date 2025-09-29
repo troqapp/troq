@@ -1,20 +1,31 @@
+import MobileHeader from '../components/MobileHeader.jsx'
 import NeonButton from '../components/NeonButton.jsx'
 
-export default function Settings() {
+export default function Settings(){
   return (
-    <section className="grid-2 align-start">
-      <div className="panel-surface card stack-vertical">
-        <h2 className="section-title">Account Settings</h2>
-        <label className="stack-vertical"><span>Email</span><input className="input-neon" defaultValue="you@domain.com" /></label>
-        <label className="stack-vertical"><span>New Password</span><input type="password" className="input-neon" placeholder="••••••••" /></label>
-        <div className="row justify-end">
-          <NeonButton color="teal">Update</NeonButton>
+    <section>
+      <MobileHeader title="Settings & Support" backTo="/profile" />
+
+      <div className="list-section">
+        <h3 className="section-heading">Account</h3>
+        <div className="card-list">
+          <div className="person-card"><span>Notifications</span><span className="person-meta" style={{marginLeft:'auto'}}>›</span></div>
+          <div className="person-card"><span>Privacy</span><span className="person-meta" style={{marginLeft:'auto'}}>›</span></div>
+          <div className="person-card"><span>Security</span><span className="person-meta" style={{marginLeft:'auto'}}>›</span></div>
+          <div className="person-card"><span>Language</span><span className="person-meta" style={{marginLeft:'auto'}}>English</span></div>
         </div>
       </div>
-      <div className="panel-surface card stack-vertical">
-        <h3 className="section-title">Preferences</h3>
-        <label className="row"><input type="checkbox" defaultChecked /> <span>Enable cosmic animations</span></label>
-        <label className="row"><input type="checkbox" defaultChecked /> <span>Show skill hints</span></label>
+
+      <div className="list-section">
+        <h3 className="section-heading">Support</h3>
+        <div className="card-list">
+          <div className="person-card"><span>Help Center</span><span className="person-meta" style={{marginLeft:'auto'}}>›</span></div>
+          <div className="person-card"><span>Contact Support</span><span className="person-meta" style={{marginLeft:'auto'}}>›</span></div>
+        </div>
+      </div>
+
+      <div className="centered" style={{marginTop:16}}>
+        <NeonButton color="purple">Contact Support</NeonButton>
       </div>
     </section>
   )
